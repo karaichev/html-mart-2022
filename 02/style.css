@@ -1,0 +1,71 @@
+html, body {
+    background-color: lightgoldenrodyellow;
+    /* font */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    /* text */
+    text-align: left;
+    /* text-decoration: underline;
+    text-transform: capitalize; */
+}
+
+/* Селектор тега */
+p {
+    color: brown;
+}
+
+/* Селектор класса */
+.dark-text {
+    color: black;
+}
+
+p.dark-text {
+    color: darkblue;
+}
+
+/* Селектор идентификатора */
+#green {
+    color: green;
+}
+
+.green-text {
+    color: green;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+/* Применяет стиль для элементов 
+   с обоими классами dark-text и upper */
+.dark-text.upper {
+
+}
+
+/*
+<div class="dark-text">
+    <div class="upper"></div> <-- применится сюда
+    <p>
+      <div class="upper"></div> <-- НЕ применится сюда
+    </p>
+</div>
+*/
+.dark-text .upper {
+    color: darkcyan;
+}
+
+/*
+<div class="dark-text">
+    <div class="upper"></div> <-- применится сюда
+    <p>
+      <div class="upper"></div> <-- применится сюда
+    </p>
+</div>
+*/
+.dark-text > .upper {
+    font-weight: bold;
+}
+
+

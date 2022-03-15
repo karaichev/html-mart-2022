@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.row {
+    width: 200px;
+
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+
+    margin: 30px auto 0 auto;
+
+    padding: 15px 30px 15px 30px;
+    padding: 15px 30px;
+
+    background-color: beige;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: firebrick;
+
+    border: 3px solid firebrick;
+}
