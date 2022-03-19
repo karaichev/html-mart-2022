@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.header {
+    overflow: hidden;
+    min-height: 300px;
+    height: 50vh;
+
+    background-color: beige;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header h1, .header h2 {
+    margin: 100px auto 0;
+    padding: 40px;
+    width: 50vw;
+    max-width: 700px;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.header h2 {
+    margin: 10px auto 0;
+    padding: 10px;
+    background: none;
+    font-size: 1.5rem;
+}
