@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form action="" enctype="multipart/form-data">
+        <div class="form-input">
+            <label>Name
+                <input 
+                    type="text" 
+                    name="name" 
+                    class="text" 
+                    required 
+                    value="Pechkin"
+                    disabled
+                >
+            </label>
+        </div>
+        <div class="form-input">
+            email
+            <input type="email">
+        </div>
+        <div class="form-input">
+            Photo
+            <input type="file">
+        </div>
+        <div class="form-input">
+            number
+            <input type="number">
+        </div>
+        <div class="form-input">
+            <label>Remember me
+                <input type="checkbox" name="remember-me" checked>
+            </label>
+            <label>Remember me 2
+                <input type="checkbox" name="remember-me-2">
+            </label>
+        </div>
+        <div class="form-input">
+            <label>Register
+                <input type="radio" name="register" value="reg-1" checked>
+            </label>
+            <label>Login
+                <input type="radio" name="register" value="reg-2">
+            </label>
+            <label>Disable
+                <input type="radio" name="register" value="reg-3">
+            </label>
+        </div>
+        <div class="form-input">
+            <label>About me
+                <textarea name="about-me" cols="15" rows="10">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</textarea>
+            </label>
+        </div>
+        <div class="form-input">
+            <label>Select color
+                <select name="color" class="text">
+                    <optgroup label="Favorite">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                    </optgroup>
+                    <option value="blue" selected>Blue</option>
+                    <option value="orange">Orange</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-input">
+            <input type="submit">
+            <input type="reset">
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.form-input {
+    margin-bottom: .3rem;
+}
+
+.text {
+    padding: 5px 10px;
+    border: 1px solid yellowgreen;
+    border-radius: 2px;
+}

@@ -1,0 +1,23 @@
+.controller {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: green;
+}
+
+.controlled {
+    width: 150px;
+    height: 100px;
+    background-color: blueviolet;
+    /* visibility: hidden; */
+    display: none;
+}
+
+.controlled:hover {
+    display: block;
+}
+
+.controller:hover + .controlled {
+    /* visibility: visible; */
+    display: block;
+}
