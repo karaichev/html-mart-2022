@@ -30,7 +30,7 @@ ul li:nth-child(2n) {
 
 .clearfix::after {
     content: "";
-    display: block;
+    /* display: block; */
     clear: both;
 }
 

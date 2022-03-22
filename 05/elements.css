@@ -1,0 +1,66 @@
+.btn {
+    padding: 5px 10px;
+    border: 1px solid darkkhaki;
+    border-radius: 5px;
+    background-color: khaki;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(248, 239, 160);
+}
+
+.btn:disabled {
+    background-color: lightgray;
+    cursor: default;
+}
+
+a.btn {
+    text-decoration: line-through;
+}
+
+.btn-icon::before {
+    display: inline-block;
+    content: "";
+    border: 1px solid darkkhaki;
+    background-color: darkkhaki;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.7rem;
+}
+
+.btn-icon.icon-snowman::before {
+    content: "\2603";
+}
+
+.btn-icon.icon-smile::before {
+    content: "\1F60E";
+}
+
+.checkbox-container {
+    display: flex;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox-container::after {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: darkkhaki;
+    content: "\1F5F8";
+}
+
+.checkbox-container::after input[type="checkbox"] {
+    content: "";
+}
+
+.checkbox-container::after input[type="checkbox"]:checked {
+    content: "\1F5F8";
+}
