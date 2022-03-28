@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-image: url(img/pink-donut.jpg);
+    background-color: #f7cd00;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1040px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.header h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+.main-menu li a {
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+.main-menu li.selected-item a,
+.main-menu li a:hover {
+    background-color: #000000;
+    color: #f7cd00;
+}
+
+.scroll {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    background-image: url(img/scroll-border.png);
+    background-position: right;
+    background-repeat: repeat-y;
+}
+
+.scroll::after {
+    display: block;
+    position: absolute;
+    right: -13px;
+    top: 103px;
+    content: '';
+    width: 31px;
+    height: 58px;
+    background-image: url(img/scroll-button.png);
+}
+
+.btn-container {
+    padding: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .3rem 2rem;
+    background-color: #fad663;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
