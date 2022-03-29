@@ -1,14 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,800;1,400;1,800&display=swap');
+
+:root {
+    --bg-head-color: #f7cd00;
+    --bg-btn-color: #fad663;
+    --primary-color: #000000;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Vollkorn', Arial, sans-serif;
+    color: var(--primary-color);
+}
+
+h2 {
+    margin: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: lighter;
+    margin: 3rem 2rem;
+    font-size: .9rem;
 }
 
 .header {
     overflow: hidden;
-    background-image: url(img/pink-donut.jpg);
-    background-color: #f7cd00;
+    background-image: url(img/donut-tomato.png);
+    background-color: var(--bg-head-color);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,20 +62,20 @@ body {
 .main-menu li a {
     padding: .5rem 1rem;
     text-decoration: none;
-    color: #000000;
+    color: var(--primary-color);
     text-transform: uppercase;
     border-radius: 12px;
 }
 
 .main-menu li.selected-item a,
 .main-menu li a:hover {
-    background-color: #000000;
-    color: #f7cd00;
+    background-color: var(--primary-color);
+    color: var(--bg-head-color);
 }
 
 .scroll {
     position: relative;
-    width: 50%;
+    width: calc(50% + 3px);
     height: 200px;
     background-image: url(img/scroll-border.png);
     background-position: right;
@@ -72,16 +94,100 @@ body {
 }
 
 .btn-container {
-    padding: 3rem;
+    position: relative;
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.btn-container::before,
+.btn-container::after {
+    position: absolute;
+    top: calc(3rem + 12px);
+    left: 1rem;
+    display: block;
+    height: 3px;
+    background-color: var(--primary-color);
+    width: 100%;
+    content: '';
+    z-index: 1;
+}
+.btn-container::after {
+    top: calc(3rem + 18px);
+    left: -1rem;
+}
+.btn-container > .btn,
+.btn-container > h2 {
+    position: relative;
+    z-index: 10;
 }
 
 .btn {
     display: inline-block;
     padding: .3rem 2rem;
-    background-color: #fad663;
-    border: 3px solid #000000;
+    background-color: var(--bg-btn-color);
+    border: 3px solid var(--primary-color);
     border-radius: 12px;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.underline { 
+    position: relative;
+}
+
+.underline::before,
+.underline::after {
+    position: absolute;
+    display: block;
+    left: 3rem;
+    bottom: -.5rem;
+    height: 3px;
+    background-color: var(--primary-color);
+    width: calc(100% - 3rem);
+    content: '';
+    z-index: 1;
+}
+.underline::after {
+    left: 0;
+    bottom: -14px;
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+    min-height: 10rem;
+}
+
+.col {
+    flex: 1;
+}
+
+.center-dash {
+    background-image: url(img/scroll-border.png);
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+
+.cafe-menu-image-list img {
+    width: 340px;
+}
+
+.row.cafe-menu-dividers {
+    height: 80px;
+    min-height: auto;
+}
+
+.cafe-menu h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cafe-menu p {
+    margin: 2rem;
+    text-align: center;
 }
